@@ -35,6 +35,7 @@ img {
 
 :root {
    --accent-color: #4D5AE5;
+   --hover-accent-color: #404BBF;
    --main-color: #2E2F42;
    --minor-color: #434455;
    --lite-color: #FFFFFF;
@@ -106,7 +107,7 @@ img {
 }
 
 .nav-link:hover, .contact-link:hover, .nav-link:focus, .contact-link:focus {
-   color: #404BBF;
+   color: var(--hover-accent-color);
 }
 
 
@@ -141,7 +142,7 @@ img {
    cursor: pointer;
    width: 169px;
    height: 56px;
-   background: #4D5AE5;
+   background: var(--accent-color)
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-color: transparent;
    border-radius: 4px;
@@ -149,7 +150,7 @@ img {
 }
 
 .hero-btn:hover, .hero-btn:focus {
-   background: #404BBF;
+   background: var(--hover-accent-color);
 }
 
 .section-title {
@@ -281,7 +282,7 @@ img {
 }
 
 .team-soc-link:is(:hover, :focus) {
-   background-color: #404BBF;
+   background-color: var(--hover-accent-color);
 }
 
 /* Customers */
@@ -316,7 +317,7 @@ img {
    fill: #AFB1B8;;
 }
 .customers-link:is(:hover, :focus) .customers-icon{
-   fill: #404BBF;
+   fill: var(--hover-accent-color);
 }
 
 
@@ -349,9 +350,9 @@ img {
 
 .filters-btn:hover, .filters-btn:focus {
    color: var(--lite-color);
-   border: 1px solid #404BBF;
+   border: 1px solid var(--hover-accent-color);
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-   background: #404BBF;
+   background: var(--hover-accent-color);
 }
 
 .project-cards {
@@ -425,7 +426,7 @@ img {
    height: 72px;
 }
 
-.footer-soc-text {
+.footer-soc-title {
    font-weight: 500;
    line-height: var(--text-lh);
    letter-spacing: 0.02em;
